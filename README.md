@@ -3,4 +3,4 @@
 I followed Pandemonium YouTube Channel's 2D Platformer Tutorial for building this
 
 ![Screenshot](Gameplay/Screenshot.png)
-![Screenshot2](Gameplay/Screenshot2.png)
+![Screenshot2](Gameplay/Sceenshot2.png)
