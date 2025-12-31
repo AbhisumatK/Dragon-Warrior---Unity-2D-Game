@@ -5112,7 +5112,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.938, y: -1.928, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1315915391}
@@ -5210,8 +5210,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b218d521056e66a4b81f9530c2e0cf59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemy
-  attackCooldown: 0
-  damage: 0
+  attackCooldown: 1
+  damage: 2
+  range: 2.5
+  colliderDistance: 0.45
+  boxCollider: {fileID: 1164281762}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &1164281761
 MonoBehaviour:
   m_ObjectHideFlags: 0
