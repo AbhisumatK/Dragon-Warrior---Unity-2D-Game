@@ -9,7 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Enemy")]
     [SerializeField] private Transform enemy;
 
-    [Header("Movement Points")]
+    [Header("Movement Parameters")]
     [SerializeField] private float speed;
     private Vector3 initScale;
     private bool movingLeft;
@@ -33,7 +33,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void moveInDirection(int _direction)
     {
-        // Movement logic here
+        // Movement logic
         enemy.localScale = new Vector3(Mathf.Abs(initScale.x * _direction), initScale.y, initScale.z);
 
         //move in the given direction
