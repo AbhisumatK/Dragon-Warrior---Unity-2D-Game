@@ -4616,7 +4616,9 @@ MonoBehaviour:
   leftEdge: {fileID: 333651874}
   rightEdge: {fileID: 219151177}
   enemy: {fileID: 1164281757}
-  speed: 1
+  speed: 2
+  anim: {fileID: 1164281761}
+  idleDuration: 1
 --- !u!1 &1068199591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,6 +5199,11 @@ SpriteRenderer:
 --- !u!4 &1164281757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5090487831102028032, guid: 0f0d2321ccf0dac4f835fe614cfc0a39, type: 3}
+  m_PrefabInstance: {fileID: 2329670038582014873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1164281761 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8715813769928359061, guid: 0f0d2321ccf0dac4f835fe614cfc0a39, type: 3}
   m_PrefabInstance: {fileID: 2329670038582014873}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1179209343
@@ -11046,6 +11053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 986175008}
     m_Modifications:
+    - target: {fileID: 596435818111254963, guid: 0f0d2321ccf0dac4f835fe614cfc0a39, type: 3}
+      propertyPath: range
+      value: 2.34
+      objectReference: {fileID: 0}
     - target: {fileID: 4182186045116294550, guid: 0f0d2321ccf0dac4f835fe614cfc0a39, type: 3}
       propertyPath: m_Name
       value: MeleeEnemy

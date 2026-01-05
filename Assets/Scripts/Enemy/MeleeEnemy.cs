@@ -11,10 +11,12 @@ public class MeleeEnemy : MonoBehaviour
     private float coolDownTimer = Mathf.Infinity;
     private Animator anim;
     private Health playerHealth;
+    private EnemyPatrol enemyPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        enemyPatrol = GetComponentInParent<EnemyPatrol>();
     }
 
     private void Update()
@@ -30,6 +32,9 @@ public class MeleeEnemy : MonoBehaviour
                 anim.SetTrigger("meleeAttack");                
             }
         }
+
+        if (enemyPatrol != null)
+            enemyPatrol.enabled = !PlayerInSight();
     }
         
     private bool PlayerInSight()
