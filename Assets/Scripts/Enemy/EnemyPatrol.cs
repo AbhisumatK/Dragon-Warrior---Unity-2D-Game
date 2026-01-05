@@ -23,18 +23,39 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (movingLeft)
         {
-            moveInDirection(-1);
+            if (enemy.position.x >= leftEdge.position.x)
+            {
+                moveInDirection(-1);
+            }
+            else
+            {
+                DirectionChange();
+            }
+            
         }
         else
         {
-            moveInDirection(1);
+            if (enemy.position.x <= rightEdge.position.x)
+            {
+                moveInDirection(1);
+            }
+            else
+            {
+                DirectionChange();
+            }
+            
         }
+    }
+
+    private void DirectionChange()
+    {
+        movingLeft = !movingLeft;
     }
 
     private void moveInDirection(int _direction)
     {
         // Movement logic
-        enemy.localScale = new Vector3(Mathf.Abs(initScale.x * _direction), initScale.y, initScale.z);
+        enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction, initScale.y, initScale.z);
 
         //move in the given direction
         enemy.position = new Vector3(enemy.position.x + Time.deltaTime * _direction * speed, enemy.position.y, enemy.position.z);
