@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class MeleeEnemy : MonoBehaviour
 {
+    [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private int damage;
     [SerializeField] private float range;
+
+    [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
+
+    [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
+
+    // References
     private float coolDownTimer = Mathf.Infinity;
     private Animator anim;
     private Health playerHealth;

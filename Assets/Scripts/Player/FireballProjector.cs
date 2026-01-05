@@ -37,6 +37,11 @@ public class FireballProjector : MonoBehaviour
         anim.SetTrigger("explode");
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
+
+        if (collision.CompareTag("Enemy"))
+        {
+            collision.GetComponent<Health>()?.TakeDamage(1);
+        }
     }
 
     public void setDirection(float _direction)
