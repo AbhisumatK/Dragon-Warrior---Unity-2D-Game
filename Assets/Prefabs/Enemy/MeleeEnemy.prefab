@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1626808463158815583}
   - component: {fileID: 5356966825491051577}
   - component: {fileID: 596435818111254963}
+  - component: {fileID: 2073130968170092767}
   m_Layer: 9
   m_Name: MeleeEnemy
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4182186045116294550}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.2453036, y: -1.928, z: 0}
+  m_LocalPosition: {x: 1.27352, y: -1.928, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -178,6 +179,8 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 0
   numberOfFlashes: 0
+  components:
+  - {fileID: 596435818111254963}
 --- !u!114 &596435818111254963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,3 +201,16 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &2073130968170092767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4182186045116294550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31126a354c5404e40a89298a58026530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
+  damage: 1
