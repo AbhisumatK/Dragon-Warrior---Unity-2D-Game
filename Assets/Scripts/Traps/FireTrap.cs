@@ -14,6 +14,9 @@ public class FireTrap : MonoBehaviour
     private bool active; // to check if the trap is currently active
     private Health playerHealth;
 
+    [Header("FireTrap Sound")]
+    [SerializeField] private AudioClip fireTrapSound;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -57,7 +60,9 @@ public class FireTrap : MonoBehaviour
     {
         triggered = true;
         spriteRend.color = Color.red;
+
         yield return new WaitForSeconds(activationDelay);
+        SoundManager.instance.PlaySound(fireTrapSound);
         spriteRend.color = Color.white;
         // activate the trap
         active = true;

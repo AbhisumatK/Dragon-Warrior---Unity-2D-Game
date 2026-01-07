@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthCollectible
   healthValue: 1
+  collectSound: {fileID: 8300000, guid: de38acb86805c7a418f6ff03f65094a9, type: 3}
 --- !u!61 &930117074748511747
 BoxCollider2D:
   m_ObjectHideFlags: 0
