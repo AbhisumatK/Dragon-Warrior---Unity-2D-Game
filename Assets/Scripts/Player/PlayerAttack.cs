@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireballs;
     private float CoolDownTimer = Mathf.Infinity;
+    [SerializeField] private AudioClip fireballSound;
 
     private void Awake()
     {
@@ -25,9 +26,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        SoundManager.instance.PlaySound(fireballSound);
         // Trigger attack animation
         anim.SetTrigger("attack");
         CoolDownTimer = 0; // Set cooldown duration
+        SoundManager.instance.PlaySound(fireballSound);
 
         fireballs[findFireball()].transform.position = firePoint.position;
         fireballs[findFireball()].GetComponent<FireballProjector>().setDirection(Mathf.Sign(transform.localScale.x));

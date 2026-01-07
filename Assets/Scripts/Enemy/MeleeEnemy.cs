@@ -14,6 +14,9 @@ public class MeleeEnemy : MonoBehaviour
     [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
 
+    [Header("Attack Sound")]
+    [SerializeField] private AudioClip attackSound;
+
     // References
     private float coolDownTimer = Mathf.Infinity;
     private Animator anim;
@@ -32,11 +35,12 @@ public class MeleeEnemy : MonoBehaviour
         // attack when player in sight
         if (PlayerInSight())
         {
-            if(coolDownTimer >= attackCooldown)
+            if(coolDownTimer >= attackCooldown && playerHealth.currentHealth > 0)
             {
                 //Attack player
                 coolDownTimer = 0;
-                anim.SetTrigger("meleeAttack");                
+                anim.SetTrigger("meleeAttack");
+                SoundManager.instance.PlaySound(attackSound);              
             }
         }
 
