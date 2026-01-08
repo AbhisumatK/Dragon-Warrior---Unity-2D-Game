@@ -4,9 +4,12 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D body;
     private Animator anim;
+    [Header("Movement Parameters")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     private BoxCollider2D boxCollider;
+
+    [Header("Layers")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     private float wallJumpCooldown;
@@ -15,6 +18,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("SFX")]
     [SerializeField] private AudioClip jumpSound;
 
+    [Header("Coyote Time")]
+    [SerializeField] private float coyoteTime;
+    private float coyoteCounter;
+
+    [Header("Multiple Jumps")]
+    [SerializeField] private int extraJumps;
+    private int extraJumpsCounter;
 
     private void Awake()
     {
@@ -63,31 +73,56 @@ public class PlayerMovement : MonoBehaviour
         {
             body.gravityScale = 7;
             body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+
+            if (isGrounded())
+            {
+                coyoteCounter = coyoteTime;
+                extraJumpsCounter = extraJumps;
+            }
+            else
+            {
+                coyoteCounter -= Time.deltaTime;
+            }
         }
     }
 
     private void Jump()
     {
-         if (isGrounded())
+        if(coyoteCounter < 0 && !onWall() && extraJumpsCounter <= 0) return;
+        SoundManager.instance.PlaySound(jumpSound);
+        
+        if(onWall())
         {
-            SoundManager.instance.PlaySound(jumpSound);
-            body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
+            wallJump();
         }
-
-        else if (onWall() && !isGrounded())
+        else
         {
-            if (horizontalInput == 0)
+            if(isGrounded())
             {
-                body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 0);
-                transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
             }
             else
             {
-                body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 6.5f);
+                if(coyoteCounter > 0)
+                {
+                    body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
+                }
+                else
+                {
+                    if(extraJumpsCounter > 0)
+                    {
+                        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
+                        extraJumpsCounter--;
+                    }
+                }
             }
-            wallJumpCooldown = 0;
-            
+
+            coyoteCounter = 0;
         }
+    }
+
+    private void wallJump()
+    {
         
     }
 
