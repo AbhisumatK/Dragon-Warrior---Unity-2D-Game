@@ -26,6 +26,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private int extraJumps;
     private int extraJumpsCounter;
 
+    [Header("Wall Jump")]
+    [SerializeField] private float wallJumpX;
+    [SerializeField] private float wallJumpY;
+
     private void Awake()
     {
         // Get references to Rigidbody2D and Animator components
@@ -123,9 +127,31 @@ public class PlayerMovement : MonoBehaviour
 
     private void wallJump()
     {
-        
-    }
+        body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * wallJumpX, wallJumpY));
+        wallJumpCooldown = 0;
 
+        // if (wallJumpCooldown > 0.2f)
+        // {
+        //     body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+        
+
+        //     if (onWall() && !isGrounded())
+        //     {
+        //         body.gravityScale = 0;
+        //         body.linearVelocity = Vector2.zero;
+        //     }
+        //     else
+        //     {
+        //         body.gravityScale = 7;
+        //     }
+        //     if(Input.GetKey(KeyCode.Space))
+        //         Jump();
+        // }
+        // else
+        // {
+        //     wallJumpCooldown += Time.deltaTime;
+        // }
+    }
     private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(
