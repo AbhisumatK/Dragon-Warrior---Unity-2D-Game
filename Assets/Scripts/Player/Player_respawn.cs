@@ -5,14 +5,25 @@ public class Player_respawn : MonoBehaviour
     private Transform currentcheckPoint;
     [SerializeField] private AudioClip respawnSound;
     private Health playerHealth;
+    private UIManager uiManager;
 
     private void Awake()
     {
         playerHealth = GetComponent<Health>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
-    public void respawn()
+    public void checkRespawn()
     {
+        //check if checkpoint exists
+        if (currentcheckPoint == null)
+        {
+            // show game over screen
+            uiManager.GameOver();
+            return;
+        }
+
+
         transform.position = currentcheckPoint.position;
         playerHealth.Respawn();
 
