@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 3546308322778393423}
   - component: {fileID: 1838490170522109921}
   - component: {fileID: 5197014796245673715}
+  - component: {fileID: 1900743008488042533}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -225,6 +226,8 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: bec64ab2fd9226d4ba785c8d3f0c9af9, type: 3}
   coyoteTime: 0.25
   extraJumps: 1
+  wallJumpX: 2000
+  wallJumpY: 700
 --- !u!114 &3546308322778393423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,3 +296,16 @@ MonoBehaviour:
   - {fileID: 1445031439573629482}
   deathSound: {fileID: 8300000, guid: 19935b264c1d4de478d60432cfa5272b, type: 3}
   hurtSound: {fileID: 8300000, guid: f440c6e2244535b4b9f920267f26e932, type: 3}
+--- !u!114 &1900743008488042533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643690500425328984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bd4d52e12eae046966913b8e827350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_respawn
+  respawnSound: {fileID: 8300000, guid: 17b759aa1af1ac2469ed47a437613990, type: 3}
