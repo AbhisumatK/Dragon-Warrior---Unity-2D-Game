@@ -13,7 +13,7 @@ Thumbs.db
 # IDE junk
 .vscode/
 .idea/
-TextMeshPro/
+TextMesh Pro/
 *.csproj
 *.sln
 *.user
