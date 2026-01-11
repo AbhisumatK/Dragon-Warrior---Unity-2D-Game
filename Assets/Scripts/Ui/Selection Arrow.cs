@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelectionArrow : MonoBehaviour
 {
@@ -18,12 +19,15 @@ public class SelectionArrow : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             changePosition(-1);
-            SoundManager.instance.PlaySound(selectSound);
         }
         else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             changePosition(1);
-            SoundManager.instance.PlaySound(selectSound);
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Space))
+        {
+            interact();
         }
     }
 
@@ -48,5 +52,11 @@ public class SelectionArrow : MonoBehaviour
             options[currentPosition].position.y,
             0
         );
+    }
+
+    private void interact()
+    {
+        SoundManager.instance.PlaySound(selectSound);
+        options[currentPosition].GetComponent<Button>().onClick.Invoke();
     }
 }
