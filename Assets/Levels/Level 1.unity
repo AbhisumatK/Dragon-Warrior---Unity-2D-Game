@@ -1356,7 +1356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &340298416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2753,6 +2753,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54451840ca651c842ab8d33461460265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectionArrow
+  options:
+  - {fileID: 1608525}
+  - {fileID: 116812554}
+  - {fileID: 1363524390}
+  changeSound: {fileID: 8300000, guid: 25155bcd4b2edab4c8f56d4679969b8d, type: 3}
+  selectSound: {fileID: 8300000, guid: de38acb86805c7a418f6ff03f65094a9, type: 3}
 --- !u!114 &504224669
 MonoBehaviour:
   m_ObjectHideFlags: 0
