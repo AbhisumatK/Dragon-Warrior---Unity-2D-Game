@@ -215,7 +215,6 @@ MonoBehaviour:
   numberOfFlashes: 0
   components:
   - {fileID: 3890284755158000775}
-  - {fileID: 0}
   deathSound: {fileID: 8300000, guid: 19935b264c1d4de478d60432cfa5272b, type: 3}
   hurtSound: {fileID: 8300000, guid: f440c6e2244535b4b9f920267f26e932, type: 3}
 --- !u!114 &3890284755158000775
@@ -230,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65d6da31e30b854c86af96b05f97ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangedEnemy
-  attackCooldown: 1
+  attackCooldown: 0.5
   damage: 1
   range: 13.5
   firePoint: {fileID: 8633791392223283878}
