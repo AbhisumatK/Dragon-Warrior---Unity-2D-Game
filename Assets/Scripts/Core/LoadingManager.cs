@@ -7,7 +7,7 @@ public class LoadingManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2); // Load scene with build index 2
         }
     }
 }
