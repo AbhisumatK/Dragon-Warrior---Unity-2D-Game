@@ -21989,6 +21989,7 @@ GameObject:
   - component: {fileID: 1762258263}
   - component: {fileID: 1762258262}
   - component: {fileID: 1762258261}
+  - component: {fileID: 1762258267}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -22157,6 +22158,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762258259}
   m_CullTransparentMesh: 1
+--- !u!114 &1762258267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762258259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0caa6002d1f3af348905423e2070bbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
+  clickSound: {fileID: 8300000, guid: de38acb86805c7a418f6ff03f65094a9, type: 3}
 --- !u!1 &1770907055
 GameObject:
   m_ObjectHideFlags: 0
@@ -22536,7 +22550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1785912517
 RectTransform:
   m_ObjectHideFlags: 0

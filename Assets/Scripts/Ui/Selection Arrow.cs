@@ -54,7 +54,7 @@ public class SelectionArrow : MonoBehaviour
         );
     }
 
-    private void interact()
+    public void interact()
     {
         SoundManager.instance.PlaySound(selectSound);
         options[currentPosition].GetComponent<Button>().onClick.Invoke();

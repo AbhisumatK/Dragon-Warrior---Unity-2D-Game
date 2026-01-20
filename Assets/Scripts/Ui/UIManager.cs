@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
     }

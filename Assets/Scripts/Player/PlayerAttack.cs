@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
+        if(Time.timeScale == 0) return;
+
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+
         if(Input.GetMouseButtonDown(0) && attackCooldown < CoolDownTimer && playerMovement.canAttack())
             Attack();
 
