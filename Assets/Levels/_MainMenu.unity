@@ -608,7 +608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuVolumeSettings
   musicSource: {fileID: 1523868910}
   musicSlider: {fileID: 748880550}
-  soundSlider: {fileID: 0}
+  soundSlider: {fileID: 1495533874}
 --- !u!1 &135363710
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,11 +929,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 32470783}
+  - {fileID: 1523868909}
   - {fileID: 1731617793}
   - {fileID: 618730272}
   - {fileID: 234763183}
   - {fileID: 130237020}
-  - {fileID: 1523868909}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1644,7 +1644,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.351
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2669,9 +2669,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 0e236fae00329e0418f06c47d240bc13, type: 3}
+  m_Resource: {fileID: 8300000, guid: feb72eaace0434d4bb7787b537861ec0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.115
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0

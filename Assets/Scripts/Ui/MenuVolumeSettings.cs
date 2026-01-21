@@ -26,7 +26,6 @@ public class MenuVolumeSettings : MonoBehaviour
     }
     public void SetSoundVolume(float value)
     {
-        musicSource.volume = value;
         PlayerPrefs.SetFloat("SoundVolume", value);
     }
 }
