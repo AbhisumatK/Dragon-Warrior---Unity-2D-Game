@@ -2569,6 +2569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1139266802403097961, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1146962415}
     - target: {fileID: 3348025227543707071, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
       propertyPath: m_Name
       value: UICanvas
@@ -12989,6 +12993,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1146962415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5197014796245673715, guid: 726432c0c769c8140a7ca20c78979641, type: 3}
+  m_PrefabInstance: {fileID: 1290421383959261266}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4029c48272c318f47a6d1d3c080a5477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
 --- !u!1 &1158661997
 GameObject:
   m_ObjectHideFlags: 0
