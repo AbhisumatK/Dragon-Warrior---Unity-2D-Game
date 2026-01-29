@@ -3,10 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class Level_change : MonoBehaviour
 {
+    [SerializeField] private AudioClip level_change_Sound;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            SoundManager.instance.PlaySound(level_change_Sound);
             UnlockNewLevel();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
