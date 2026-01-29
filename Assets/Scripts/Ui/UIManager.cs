@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Pause Menu")]
     [SerializeField] private GameObject pauseScreen;
+    [SerializeField] private AudioClip pauseSound;
 
     private void Awake()
     {
@@ -57,6 +58,7 @@ public class UIManager : MonoBehaviour
 #region PAUSE
     public void PauseGame(bool status)
     {
+        SoundManager.instance.PlaySound(pauseSound);
         pauseScreen.SetActive(status);
 
         // if the game is paused, stop time; else, resume time; time scale 0 = paused, 1 = normal speed, 0.5 = half speed, etc.
@@ -64,6 +66,7 @@ public class UIManager : MonoBehaviour
             Time.timeScale = 0;
         else
             Time.timeScale = 1;
+        
     }
 
     public void SoundVolume()

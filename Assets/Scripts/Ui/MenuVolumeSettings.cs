@@ -4,28 +4,13 @@ using UnityEngine.Audio;
 
 public class MenuVolumeSettings : MonoBehaviour
 {
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private Slider musicSlider;
-    [SerializeField] private Slider soundSlider;
-
-    private void Start()
+    public void SoundVolume()
     {
-        float savedMusicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
-        musicSlider.value = savedMusicVolume;
-        SetMusicVolume(savedMusicVolume);
-
-        float savedSoundVolume = PlayerPrefs.GetFloat("SoundVolume", 1f);
-        soundSlider.value = savedSoundVolume;
-        SetSoundVolume(savedSoundVolume);
+        SoundManager.instance.changeSoundVolume(0.2f);
     }
 
-    public void SetMusicVolume(float value)
+    public void MusicVolume()
     {
-        musicSource.volume = value;
-        PlayerPrefs.SetFloat("MusicVolume", value);
-    }
-    public void SetSoundVolume(float value)
-    {
-        PlayerPrefs.SetFloat("SoundVolume", value);
+        SoundManager.instance.changeMusicVolume(0.2f);
     }
 }

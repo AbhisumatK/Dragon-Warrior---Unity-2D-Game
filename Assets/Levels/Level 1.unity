@@ -3615,7 +3615,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 0e236fae00329e0418f06c47d240bc13, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -24479,6 +24479,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 966345390}
+    - target: {fileID: 2932775613333521782, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
+      propertyPath: pauseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e4ee6516f5642634e9541f1393b6a817, type: 3}
     - target: {fileID: 3348025227543707071, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
       propertyPath: m_Name
       value: UICanvas

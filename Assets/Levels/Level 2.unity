@@ -8673,9 +8673,17 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1290421383959261267}
+    - target: {fileID: 2932775613333521782, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
+      propertyPath: pauseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f9fb2ab260cc387489fa5681e7375388, type: 3}
     - target: {fileID: 3348025227543707071, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315447656006656190, guid: f99fb213920d1e740ba3e43749a65f2c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
