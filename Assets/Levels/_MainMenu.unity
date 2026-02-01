@@ -1206,6 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d860a95e4435546805cc52b3e5891d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelMenu
+  max_no_levels: 3
   levelButtons:
   - {fileID: 450930159}
   - {fileID: 1573955137}
