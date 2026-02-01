@@ -3,28 +3,59 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
-    private Vector3[] initialPosition;
+
+    private Vector3[] initialPositions;
+    private Collider2D roomCollider;
+    private Transform player;
+
+    private bool isActive;
 
     private void Awake()
     {
-        initialPosition = new Vector3[enemies.Length];
+        roomCollider = GetComponent<Collider2D>();
+        roomCollider.isTrigger = true; // safety
+
+        initialPositions = new Vector3[enemies.Length];
         for (int i = 0; i < enemies.Length; i++)
         {
             if (enemies[i] != null)
-                initialPosition[i] = enemies[i].transform.position;
+                initialPositions[i] = enemies[i].transform.position;
         }
     }
 
-    public void ActivateRoom(bool _status)
+    private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        ActivateRoom(false); // start inactive
+    }
+
+    private void Update()
+    {
+        if (player == null)
+            return;
+
+        // THIS is the entire fix
+        bool playerInside =
+            roomCollider.bounds.Contains(player.position);
+
+        if (playerInside && !isActive)
+            ActivateRoom(true);
+        else if (!playerInside && isActive)
+            ActivateRoom(false);
+    }
+
+    public void ActivateRoom(bool status)
+    {
+        isActive = status;
+
         for (int i = 0; i < enemies.Length; i++)
         {
-            if (enemies[i] != null)
-            {
-                
-                enemies[i].SetActive(_status);
-                enemies[i].transform.position = initialPosition[i];
-            }
+            if (enemies[i] == null) continue;
+
+            enemies[i].SetActive(status);
+
+            if (status)
+                enemies[i].transform.position = initialPositions[i];
         }
     }
 }
