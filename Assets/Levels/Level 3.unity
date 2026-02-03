@@ -4363,7 +4363,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 24.296505, y: 2.311819}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!1 &415874069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6279,7 +6279,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 24.296505, y: 2.311819}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!1001 &558608057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17049,7 +17049,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 24.296505, y: 2.311819}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!1 &1464590161
 GameObject:
   m_ObjectHideFlags: 0
@@ -19630,7 +19630,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 24.296505, y: 2.311819}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!1 &1668950891
 GameObject:
   m_ObjectHideFlags: 0
@@ -23851,7 +23851,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 24.296505, y: 2.311819}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!1001 &1983225414
 PrefabInstance:
   m_ObjectHideFlags: 0
