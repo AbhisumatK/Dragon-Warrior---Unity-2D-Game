@@ -651,7 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127961926}
   - component: {fileID: 127961927}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1743,7 +1743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210303726}
   - component: {fileID: 210303727}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2247,7 +2247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273955867}
   - component: {fileID: 273955868}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2429,7 +2429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276244267}
   - component: {fileID: 276244268}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2682,7 +2682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296650015}
   - component: {fileID: 296650016}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3299,7 +3299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331929888945163429, guid: 29cad3b7578efb94986647b17dd59154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.79
+      value: -1.17
       objectReference: {fileID: 0}
     - target: {fileID: 6331929888945163429, guid: 29cad3b7578efb94986647b17dd59154, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3373,7 +3373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 343707461}
   - component: {fileID: 343707462}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3464,7 +3464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 361020421}
   - component: {fileID: 361020422}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3971,7 +3971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398636223}
   - component: {fileID: 398636224}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4423,7 +4423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 430632206}
   - component: {fileID: 430632207}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4672,7 +4672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447143258}
   - component: {fileID: 447143259}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4767,7 +4767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331929888945163429, guid: 29cad3b7578efb94986647b17dd59154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.32
+      value: -4.26
       objectReference: {fileID: 0}
     - target: {fileID: 6331929888945163429, guid: 29cad3b7578efb94986647b17dd59154, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5387,7 +5387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478992564}
   - component: {fileID: 478992565}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5619,7 +5619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488806779}
   - component: {fileID: 488806780}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5710,7 +5710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512591918}
   - component: {fileID: 512591919}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5955,7 +5955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545868017}
   - component: {fileID: 545868018}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6546,7 +6546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 597031078}
   - component: {fileID: 597031079}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7462,7 +7462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 706962984}
   - component: {fileID: 706962985}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7552,7 +7552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707226070}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7782,7 +7782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737566079}
   - component: {fileID: 737566080}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown_ori (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7873,7 +7873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739988769}
   - component: {fileID: 739988770}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown_ori
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9636,7 +9636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906659043}
   - component: {fileID: 906659044}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10562,7 +10562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025225147}
   - component: {fileID: 1025225148}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10744,7 +10744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1049267817}
   - component: {fileID: 1049267818}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11534,7 +11534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1113785973}
   - component: {fileID: 1113785974}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11656,7 +11656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125820473}
   - component: {fileID: 1125820474}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11747,7 +11747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126385472}
   - component: {fileID: 1126385473}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12293,7 +12293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162837667}
   - component: {fileID: 1162837668}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13153,7 +13153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1253010164}
   - component: {fileID: 1253010165}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14149,7 +14149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1336670201}
   - component: {fileID: 1336670202}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14240,7 +14240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338388527}
   - component: {fileID: 1338388528}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15035,7 +15035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428366072}
   - component: {fileID: 1428366073}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15741,7 +15741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331929888945163429, guid: 29cad3b7578efb94986647b17dd59154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.02
+      value: 1.83
       objectReference: {fileID: 0}
     - target: {fileID: 6331929888945163429, guid: 29cad3b7578efb94986647b17dd59154, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16222,7 +16222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522162261}
   - component: {fileID: 1522162262}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16313,7 +16313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539002516}
   - component: {fileID: 1539002517}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16495,7 +16495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1544524487}
   - component: {fileID: 1544524488}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16870,7 +16870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558407822}
   - component: {fileID: 1558407823}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17052,7 +17052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566414411}
   - component: {fileID: 1566414412}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18322,7 +18322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1686135851}
   - component: {fileID: 1686135852}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18959,7 +18959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742106725}
   - component: {fileID: 1742106726}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19425,7 +19425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778102000}
   - component: {fileID: 1778102001}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20052,7 +20052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1843802056}
   - component: {fileID: 1843802057}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20335,7 +20335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857473922}
   - component: {fileID: 1857473923}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20517,7 +20517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858555460}
   - component: {fileID: 1858555461}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20608,7 +20608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1862468062}
   - component: {fileID: 1862468063}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20786,7 +20786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867195955}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21472,7 +21472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942904538}
   - component: {fileID: 1942904539}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22485,7 +22485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1999740987}
   - component: {fileID: 1999740988}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22575,7 +22575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2002137691}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22623,7 +22623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005620801}
   - component: {fileID: 2005620802}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23018,7 +23018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034463892}
   - component: {fileID: 2034463893}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23875,7 +23875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2079226008}
   - component: {fileID: 2079226009}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24500,7 +24500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2123314136}
   - component: {fileID: 2123314137}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24591,7 +24591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142667338}
   - component: {fileID: 2142667339}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Brown (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24752,6 +24752,10 @@ PrefabInstance:
     - target: {fileID: 1643690500425328984, guid: 726432c0c769c8140a7ca20c78979641, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546308322778393423, guid: 726432c0c769c8140a7ca20c78979641, type: 3}
+      propertyPath: attackCooldown
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3546308322778393423, guid: 726432c0c769c8140a7ca20c78979641, type: 3}
       propertyPath: 'fireballs.Array.data[0]'

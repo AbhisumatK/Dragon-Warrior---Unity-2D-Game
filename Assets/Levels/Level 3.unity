@@ -8306,8 +8306,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 793590147
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 348c3b734b11d3b4aa5c69e25b7113e6, type: 3}
@@ -23524,7 +23524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954850799}
   - component: {fileID: 1954850800}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ceiling1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

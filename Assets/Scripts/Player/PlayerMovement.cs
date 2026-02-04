@@ -58,12 +58,12 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("grounded", isGrounded());
         
         //Jumping
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
             Jump();
         }
 
-        if(Input.GetKeyUp(KeyCode.Space) && body.linearVelocity.y > 0)
+        if((Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.W)) && body.linearVelocity.y > 0)
         {
             body.linearVelocity = new Vector2(body.linearVelocity.x, body.linearVelocity.y / 2);
         }

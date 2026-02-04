@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a147367e4e8a4c6469a329b350e7ec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack
-  attackCooldown: 0
+  attackCooldown: 0.1
   firePoint: {fileID: 4854277067953534560}
   fireballs:
   - {fileID: 0}
